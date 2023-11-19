@@ -23,29 +23,23 @@ function initMap() {
             coordinates: event.latLng
         })
     })
-
     for (let i = 0; i< markers.length; i++) {
         addMarker(markers[i])
     }
-
     drawDirection()
-
 }
 function addMarker(prop) {
     let marker = new google.maps.Marker({
         position: prop.coordinates,
         map: map
     })
-
     if( prop.iconImage ) {
         marker.setIcon(prop.iconImage)
     }
-
     if( prop.content ) {
         let information = new google.maps.InfoWindow({
             content: prop.content
         })
-
         marker.addListener("click", function () {
             information.open(map, marker)
         })
