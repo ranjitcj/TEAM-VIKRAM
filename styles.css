@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	/*
+	background-color: skyblue;
+	*/
+}
+h1 {
+	color: rgb(148, 148, 229);
+	background-color: black;
+	font-family: Times New Roman;
+	text-align: center;
+}
+#map{
+	border:1px solid black;
+}
+.hr{
+	height:2px;
+	background-color: grey;
+}
+.title img{
+	height:15vh;
+	margin-bottom: -4px;
+}
+.title {
+	text-align:center;
+}
+
+/*===========*/
+.nav{
+	background-color: #04AFE3;
+	padding:3px;
+	padding-block: 5px;
+}
+.nav span{
+	font-family: Verdana;
+	color:white;
+	display: inline-block;
+	padding: 3px;
+	padding-inline: 5px;
+	margin-right: 15px;
+	/*
+	border:1px solid white;
+	*/
+	transition: .25s;
+}
+
+.nav span:hover{
+	background-color: white;
+	color:black;
+}
